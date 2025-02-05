@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Monteiro</title>
+    <link rel="shortcut icon" href="assets/images/logo-mini.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/vendor/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendor/animacao/animate.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+  
+
+    <style>
+        .banner {
+            max-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="header fixed-top py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="assets/images/logo-mini.svg" class="img-fluid piclogo" style="max-height: 50px !important;"
+                    title="logo" />
+                <h3 class="d-none" style="color: #115379;">Logo</h3>
+            </div>
+            <nav class="d-none nav d-lg-flex justify-content-around align-items-center">
+                <div class="input-group">
+                    <input type="search" placeholder="Pesquisar" class="form-control" />
+                    <button><i class="icon-search"></i></button>
+                </div>
+                <ul class="link-liste d-flex py-1">
+                    <li class="lista-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="simulador.html" class="nav-link">Simuladores</a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="servicos.html" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="cursos.html" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="lista-item">
+                        <a href="#" class="nav-link link-ativado">Contactos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="div-menu-btn">
+                <button class="btn-menu-pc">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="parallax d-flex flex-column justify-content-center align-items-center banner">
+            <div class="row cont-div-banner">
+                <div
+                    class="col-12 col-lg-12 ladoesquerde d-flex flex-column alingn-items-center justify-content-center">
+                    <article class="mx-auto text-center d-flex flex-column alingn-items-center justify-content-center">
+                        <p>Pagina</p>
+                        <h2><strong>Contacto</strong></h2>
+                        <p>Escolha a melhor experiencia</p>
+                        <button class="btn btn-secondary mx-auto">Saiba mais</button>
+                    </article>
+                </div>
+
+            </div>
+            <div class="position-absolute linha-contexto bottom-0 left-0">
+                <article class="position-relative d-flex flex-column align-items-center justify-content-center">
+                    <p>Aprenda, teste e explore motores e geradores elétricos com nosso app de simulação avançada. </p>
+                </article>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="contact section parallax d-flex flex-column justify-content-center align-items-center">
+
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+              <h2>Contactos</h2>
+              <p>Se precisar de mais informações ou desejar nossos serviços, entre em contato conosco:</p>
+            </div>
+            <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      
+              <div class="row gy-4">
+      
+                <div class="col-lg-5 my-5">
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                      <h3>Endereço</h3>
+                      <p>Angola, Luanda, Maculusso</p>
+                    </div>
+                  </div>
+      
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                      <h3>Liga para Nós</h3>
+                      <p>921 697 567 / 941 941 465</p>
+                    </div>
+                  </div>
+      
+                  <div class="info-item d-flex aos-init aos-animate" data-aos="" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                      <h3>Nosso Email</h3>
+                      <p>monteiromonteiro@gmail.com</p>
+                    </div>
+                  </div>
+      
+                </div>
+      
+                <div class="col-lg-7">
+                  <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                    <div class="row gy-4">
+      
+                      <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Seu Nome" required="" />
+                      </div>
+      
+                      <div class="col-md-6 ">
+                        <input type="email" class="form-control" name="email" placeholder="Seu Email" required="" />
+                      </div>
+      
+                      <div class="col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Assunto" required="" />
+                      </div>
+      
+                      <div class="col-md-12">
+                        <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+                      </div>
+      
+                      <div class="col-md-12 text-center">
+                        <div class="loading d-none">Enviando</div>
+                        <div class="error-message d-none"></div>
+                        <div class="sent-message d-none">Mensagem enviada com sucesso! Obr /igado!</div>
+      
+                        <button type="submit">Enviar Mensagem</button>
+                      </div>
+      
+                    </div>
+                  </form>
+                </div>
+      
+              </div>
+      
+            </div>
+          </section>
+
+
+
+    </main>
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <span class="sitename">Simulador</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>Angola, Luanda, Maculusso</p>
+                        <p>Angola, Luanda, Maculusso</p>
+                        <p class="mt-3"><strong>Telefone:</strong> <span>+244 921 697 567</span></p>
+                        <p><strong>Email:</strong> <span>monteiromonteiro@gmail.com</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Links Uteis</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Simuladores</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Serviços</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Contactos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Outras Serviços</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Instalação e Manutenção de Sistemas de
+                                AVAC</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Desenvolvimento de Soluções Tecnologícas</a>
+                        </li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Formação e capacitação técnica</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Auditoria para sistemas industriais</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h4>Siga-nos</h4>
+                    <p>Siga-nos nas redes sociais para ficar por dentro das nossas novidades</p>
+                    <div class="social-links d-flex">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Simuladores Apps</strong> <span>Todos os Direitos
+                    Reservados</span></p>
+            <div class="credits">
+                á <a href="#">Monteiro e Monteiro</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="assets/vendor/jquery-7.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/animacao/wow.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollContainer = document.querySelector(".destaquescrol");
+        const btnNext = document.querySelector(".btn-next");
+        const btnPrev = document.querySelector(".btn-prev");
+
+        // Definir distância de rolagem
+        const scrollAmount = 250;
+
+        // Evento de clique nos botões
+        btnNext.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+
+        btnPrev.addEventListener("click", () => {
+            scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+
+        // Evento para rolagem com o mouse (wheel)
+        scrollContainer.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            scrollContainer.scrollBy({ left: event.deltaY, behavior: "smooth" });
+        });
+    });
+
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const scrollAmount = 150;
+
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    function autoScroll() {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+            carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+    }
+    // setInterval(autoScroll, 5000);
+</script>
+
+</html>

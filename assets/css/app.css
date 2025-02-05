@@ -1,0 +1,820 @@
+
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #07467c; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0880e8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.78);  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #115379; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f0f8ff;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #115379;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: aqua;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+.link-ativado{
+  color: var(--heading-color) !important;
+  text-decoration: underline;
+}
+
+.tab-content,
+  .nav-tabs {
+    border: none !important;
+  }
+  header input::placeholder{
+    color: #e7e7e7 !important;
+  }
+  
+  body {
+    overflow: hidden;
+    overflow-y: auto !important;;
+  }
+  
+  ul {
+    list-style-type: none !important;
+  }
+    /**HEADER**/
+    .header {
+      background-color: rgba(250, 250, 250, .9);
+    
+    }
+    
+    .header a {
+      color: #115379;
+    }
+    .header a:hover {
+      color: var(--heading-color) !important;
+      text-decoration: underline;
+    }
+    
+    .piclogo {
+      width: 150px;
+    }
+
+    .btn-menu-pc {
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      background-color: #115379;
+      border: solid 1px #115379;
+      color: #fff;
+    }
+
+    /**BANNER**/
+  .banner {
+    background: url("../images/dashboard/people.png");
+  /*  background: url("../images/carousel/img8.jpg");*/
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .banner:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 83, 121, .4);
+    background: linear-gradient(to right, rgba(15, 32, 75, .6) 0%, rgba(0, 102, 161, .6) 80%, rgba(83, 167, 217, .6) 100%);
+    inset: 0;
+    z-index: -1;
+  }
+  .cont-div-banner {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .cont-div-banner .ladoesquerde article {
+    background: rgba(231, 231, 231, .8);
+    color: #115379;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+  .linha-contexto article {
+    width: 80%;
+    height: 50px;
+    background-color: #115379;
+    margin-left: 20%;
+    color: #fafafa;
+  }
+
+  .linha-contexto article::before {
+    content: "";
+    background-color: aqua;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+    /**VIDEO CONTEXTO**/
+    .sessao-destaque {
+      width: 100%;
+      height: 100%;
+      position: relative;
+     }
+     #sessao-destaque .meu-card {
+      width: 300px;
+      height: 100px;
+      background-color: #f7f7f7;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    #sessao-destaque .meu-card small,
+  #sessao-destaque .meu-card strong {
+   color: #115379;
+  }
+   
+  #sessao-destaque .meu-card img {
+    width: 100px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  
+  .destaquescrol::-webkit-scrollbar,
+  .destaquescrol::-o-scrollbar,
+  .destaquescrol::-moz-scrollbar {
+    display: none !important;
+  }
+  
+  .destaquescrol {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer e Edge */
+  }
+  
+  .destaquescrol::-moz-scrollbar {
+    display: none;
+  }
+  
+  .btn-next,
+  .btn-prev {
+    z-index: 10;
+    opacity: 0.7;
+    top: 10%;
+    background: rgba(33, 37, 41, .9) !important;
+    border: none;
+    color: #115379;
+  }
+  
+  @-moz-document url-prefix() {
+    .destaquescrol::-moz-scrollbar {
+      display: none !important;
+    }
+  
+    .destaquescrol::-moz-scrollbar-track {
+      display: none !important;
+    }
+  
+    .destaquescrol::-moz-scrollbar-thumb {
+      display: none !important;
+    }
+  }
+  
+  .texto-video {
+    color: #115379;
+  }
+  #produtos .destaquescrol .meu-card{
+    width: 230px;
+    border-radius: 12px;
+  }
+  #produtos .destaquescrol .meu-card img{
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+  }
+  #produtos .destaquescrol .meu-card small:nth-child(2){
+    color: #115379;
+   }
+   #produtos .meus-prodtext{
+     color: #115379;
+    }
+    #produtos .meus-prodtext button{
+     background-color: #115379;
+     border-color: #115379;
+     color: #f2f2f2;
+    }
+    #produtos .linha-contexto{
+      height: 150px;
+     }
+
+      
+  /*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact {
+ /* background-image: url("../img/contact-bg.png");*/
+  background-position: left center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact:before {
+  content: "";
+ /* background: color-mix(in srgb, var(--background-color), transparent 30%); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.contact h2{
+  color: var(--heading-color) !important;
+}
+.contact .info-item+.info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--accent-color);
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+ 
+}
+
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+  
+  .destaquescrol {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .destaquescrol::-webkit-scrollbar {
+    display: none;
+  }
+  .meu-card {
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .carousel-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+
+  /*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  position: relative;
+}
+
+.footer .footer-newsletter {
+  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
+  padding: 50px 0;
+}
+
+.footer .footer-newsletter h4 {
+  font-size: 24px;
+}
+
+.footer .footer-newsletter .newsletter-form {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 6px 8px;
+  position: relative;
+  border-radius: 4px;
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.footer .footer-newsletter .newsletter-form:focus-within {
+  border-color: var(--accent-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: 100%;
+  background-color: var(--surface-color);
+  color: var(--default-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+  outline: none;
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit] {
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: -7px -8px -7px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 0;
+  color: var(--accent-color);
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-about a {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+}
+#sessao-destaque button{
+  top: 70px !important;
+}
+
+
+/**TELA CELULAR**/ 
+@media (max-width: 999px){
+  .banner .linha-contexto{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+
+  .parallax {
+    min-height: 100vh !important;
+    position: relative;
+  }
+    /**BANNER**/
+  .conteudo-pic {
+    background: url("../images/Moça.png");
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 40vh;
+   
+  }
+  .conteudo-pic span, .conteudo-pic small, .conteudo-pic strong {
+    color: #9e9e9e !important; 
+  }
+  .cont-div-banner .ladoesquerde article button {
+    max-width: 150px;
+    background-color: #2c93cf;
+    border-color: #2c93cf;
+    color: #fafafa;
+  }
+  .texto-estilo {
+    font-size: 30px;
+    position: absolute;
+    right: -15vw;
+    top: 5vh;
+    z-index: 1;
+    color: #2c93cf;
+  }
+  .texto-estilo .rodarTexto {
+    transform: rotate(90deg);
+    font-size: 50px;
+    position: relative;
+  }
+  .texto-video button {
+    max-width: 150px;
+    background-color: #2c93cf !important;
+    border-color: #2c93cf;
+    color: #fafafa;
+  }
+
+  .linha-contexto p{
+    font-size: 9px;
+  }
+  #sessao-destaque .linha-contexto{
+    height: 100px;
+    width: 100%;
+  }
+  #sessao-destaque .linha-contexto .linha-contexto-fotter{
+    width: 100%;
+    height: 100%;
+    background: url(../images/demo/ciclulos.png);
+    background-size: contain;
+    background-attachment: fixed;
+   }
+   #produtos{
+    position: relative;
+   }
+   #produtos .linha-contexto .linha-produto{
+    width: 100%;
+    height: 100%;
+    background-color: #115379;
+  }
+  #produtos .linha-contexto .linha-produto::after{
+    content: "";
+    background-color: aqua;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .prod-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+  #portifolio .linha-contexto{
+    height: 100px;
+    width: 100%;
+  }
+  #portifolio .linha-contexto .linha-contexto-fotter{
+   width: 100%;
+   height: 100%;
+   background: url(../images/demo/ciclulos.png);
+   background-size: contain;
+   background-attachment: fixed;
+  }
+}
+/**FIM TELA CELULAR**/
+
+/**TELA PC**/
+@media (min-width: 1000px){
+  
+  h1 {
+    position: absolute;
+    font-size: 5em;
+  }
+  
+  .parallax {
+    height: 100vh;
+    position: relative;
+  }
+  
+  /**HEADER**/
+  header nav {
+    border: solid 1px #e7e7e7;
+    background: #e7e7e7;
+    border-radius: 15px;
+  }
+  header nav .input-group {
+    border: solid 1px #115379;
+    background: #115379;
+    border-radius: 15px;
+    width: 150px;
+    height: 35px;
+  }
+  
+  .link-liste {
+    height: 35px;
+  }
+  
+  header nav input {
+    background-color: transparent !important;
+    border: none;
+    border-color: transparent !important;
+    max-height: 100%;
+    color: #fafafa !important;
+  }
+  
+  header nav button {
+    background-color: transparent !important;
+    border: none;
+    border-color: transparent !important;
+    max-height: 100%;
+    color: #fff;
+  }
+  
+  /**BANNER**/
+  .conteudo-pic {
+    background: url("../images/Moça.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+    .ladoesquerde{
+      height: 100%;
+    }
+  
+  .cont-div-banner .ladoesquerde article p {
+    font-size: 21px;
+  }
+  
+  .cont-div-banner .ladoesquerde article p:first-of-type {
+    font-weight: 600;
+  }
+  
+  .cont-div-banner .ladoesquerde article h2 {
+    font-size: 55px;
+  }
+  
+  .cont-div-banner .ladoesquerde article button {
+    width: 150px;
+    background-color: #2c93cf;
+    border-color: #2c93cf;
+    color: #fafafa;
+  }
+  
+  
+  .conteudo-pic::after {
+    content: "";
+    background: rgba(17, 53, 121, .8);
+    background: linear-gradient(top, rgb(55, 117, 179, .8), rgba(40, 85, 130, .8));
+    width: 80%;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    z-index: -1;
+  }
+  
+  .texto-estilo {
+    font-size: 30px;
+    position: absolute;
+    right: 5vw;
+    top: 20vh;
+    z-index: 1;
+    color: #dadada;
+  }
+  
+  .texto-estilo .rodarTexto {
+    transform: rotate(90deg);
+    font-size: 100px;
+    position: relative;
+  }
+  
+  .texto-estilo .rodarTexto strong {
+    position: absolute;
+    top: -6vw;
+    text-shadow: -1px -1px 0 rgba(26, 99, 167, 0.6);
+  }
+  
+  .linha-contexto {
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .linha-contexto article p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  /**VIDEO CONTEXTO**/   
+  .texto-video p {
+    font-size: 16px;
+  }
+  
+  .texto-video p:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1271a8;
+  }
+  
+  .texto-video button {
+    width: 150px;
+    background-color: #2c93cf !important;
+    border-color: #2c93cf;
+    color: #fafafa;
+  }
+  #sessao-destaque .linha-contexto{
+    height: 100px;
+  }
+  #sessao-destaque .linha-contexto .linha-contexto-fotter{
+   width: 100%;
+   height: 100%;
+   background: url(../images/demo/ciclulos.png);
+   background-size: contain;
+   background-attachment: fixed;
+  }
+  
+  /**PRODUTOS**/
+  
+   #produtos .linha-contexto .linha-produto{
+    width: 90%;
+    height: 100%;
+    background-color: #115379;
+  }
+  #produtos .linha-contexto .linha-produto::after{
+    content: "";
+    background-color: aqua;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /**PORTIFOLIO LISTA**/
+  
+  .prod-image{
+    width: 300px;
+    height: 300px;
+  }
+  .prod-image img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+  
+  #portifolio .linha-contexto{
+    height: 150px;
+  }
+  #portifolio .linha-contexto .linha-contexto-fotter{
+   width: 100%;
+   height: 100%;
+   background: url(../images/demo/ciclulos.png);
+   background-size: contain;
+   background-attachment: fixed;
+  }
+ 
+}
