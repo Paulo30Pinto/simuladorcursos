@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -15,18 +16,18 @@
 
   </style>
 </head>
+
 <body>
   <header id="header" class="header fixed-top py-2">
     <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo">
-        <img src="assets/images/logo-mini.svg" class="img-fluid piclogo" style="max-height: 50px !important;"
-          title="logo" />
+      <div class="logo mx-0 px-0 d-flex justify-content-start">
+        <img src="assets/images/logo-mini.svg" class="img-fluid piclogo" style="max-width: 40px;" title="logo" />
         <h3 class="d-none" style="color: #115379;">Logo</h3>
       </div>
       <nav class="d-none nav d-lg-flex justify-content-around align-items-center">
         <div class="input-group">
           <input type="search" placeholder="Pesquisar" class="form-control" />
-          <button><i class="icon-search"></i></button>
+          <button><i class="bi bi-search"></i></button>
         </div>
         <ul class="link-liste d-flex py-1">
           <li class="lista-item">
@@ -46,15 +47,25 @@
           </li>
         </ul>
       </nav>
-      <div class="div-menu-btn">
-        <button class="btn-menu-pc">
+      <div class="div-menu-btn d-flex">
+        <button class="d-none d-md-block btn btn-outline-dark mx-2 rounded-pill" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+          <i class="bi bi-person"></i> Login
+        </button>
+        <button class="d-none d-md-block btn btn-dark rounded-pill" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+          <i class="bi bi"></i> Cadastrar-se
+        </button>
+        <button class="btn-menu-pc d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
           <i class="bi bi-three-dots-vertical"></i>
         </button>
       </div>
     </div>
   </header>
-  <main class="main" id="main">
-    <section class="parallax d-flex flex-column justify-content-center align-items-center banner">
+  <main class="main" id="main" style="overflow-x: hidden;">
+    <section class="parallax d-flex flex-column justify-content-center align-items-center banner ">
+
       <div class="row cont-div-banner">
         <div class="col-12 col-lg-6 ladoesquerde d-flex flex-column alingn-items-center justify-content-center">
           <article
@@ -73,12 +84,12 @@
             class="position-relative d-flex flex-column align-items-center justify-content-center conteudo-pic wow slideInRight"
             data-wow-duration="3s" data-wow-iteration="1" data-wow-delay="100">
             <div class="texto-estilo wow zoomIn" data-wow-duration="3s" data-wow-delay="300">
-              <span>FEITOS</span>
+              <span class="d-none">AGORA</span>
               <br />
-              <small>DE</small>
+              <small class="d-none">O É</small>
 
-              <div class="rodarTexto">
-                <strong>FUTORO</strong>
+              <div class="rodarTexto-esquerda">
+                <strong class="text-white text-start" style="font-family: 'Times New Roman', Times, serif;">O FUTURO É AGORA</strong>
               </div>
 
             </div>
@@ -88,58 +99,56 @@
       <div class="position-absolute linha-contexto bottom-0 left-0">
         <article class="position-relative d-flex flex-column align-items-center justify-content-center wow slideInUp"
           data-wow-duration="3s" data-wow-iteration="1" data-wow-delay="100">
-          <p class="wow fadeInRightBig" data-wow-duration="3s" data-wow-iteration="" data-wow-delay="100">Aprenda, teste e explore motores e geradores elétricos com nosso app de simulação avançada.</p>
+          <p class="wow fadeInRightBig" data-wow-duration="3s" data-wow-iteration="" data-wow-delay="100">Aprenda, teste
+            e explore motores e geradores elétricos com nosso app de simulação avançada.</p>
         </article>
       </div>
     </section>
 
     <section class="parallax d-flex flex-column justify-content-center align-items-center" id="sessao-destaque">
       <div class="sessao-destaque container-fluid py-3">
-
-
         <button class="btn btn-dark position-absolute start-0 translate-middle-y btn-prev" id="btn-prev">❮</button>
-
         <article class="d-flex flex-nowrap overflow-x-auto destaquescrol" id="destaquescrol">
-          <div class="d-flex align-items-center shadow meu-card mx-3">
+          <a href="detalhes._curso.html" class="d-flex align-items-center shadow meu-card mx-3 nav-link">
             <img src="assets/images/carousel/img8.jpg" class="" alt="img" />
             <div class="d-flex flex-column justify-content-center px-2 text-start">
               <small>Formação</small>
               <strong>Automação Refrigiração</strong>
               <small>10/10/2025</small>
             </div>
-          </div>
-          <div class="d-flex align-items-center shadow meu-card mx-3">
+          </a>
+          <a href="detalhes._curso.html" class="nav-link d-flex align-items-center shadow meu-card mx-3">
             <img src="assets/images/carousel/img30.jpg" class="" alt="" />
             <div class="d-flex flex-column justify-content-center px-2 text-start">
               <small>Formação</small>
               <strong>Mecanica Vapor</strong>
               <small>10/10/2025</small>
             </div>
-          </div>
-          <div class="d-flex align-items-center shadow meu-card mx-3">
+          </a>
+          <a href="detalhes._curso.html" class="nav-link d-flex align-items-center shadow meu-card mx-3">
             <img src="assets/images/carousel/img15.jpg" class="" alt="" />
             <div class="d-flex flex-column justify-content-center px-2 text-start">
               <small>Formação</small>
               <strong>Reparação Chiller</strong>
               <small>10/10/2025</small>
             </div>
-          </div>
-          <div class="d-flex align-items-center shadow meu-card mx-3">
+          </a>
+          <a href="detalhes._curso.html" class="nav-link d-flex align-items-center shadow meu-card mx-3">
             <img src="assets/images/carousel/img38.jpg" class="" alt="" />
             <div class="d-flex flex-column justify-content-center px-2 text-start">
               <small>Formação</small>
               <strong>Motor Eletrico</strong>
               <small>10/10/2025</small>
             </div>
-          </div>
-          <div class="d-flex align-items-center shadow meu-card mx-3">
+          </a>
+          <a href="detalhes._curso.html" class="nav-link d-flex align-items-center shadow meu-card mx-3">
             <img src="assets/images/carousel/img13.jpg" class="" alt="" />
             <div class="d-flex flex-column justify-content-center px-2 text-start">
               <small>Formação</small>
               <strong>Programação PLC</strong>
               <small>10/10/2025</small>
             </div>
-          </div>
+          </a>
         </article>
 
         <button class="btn btn-dark position-absolute end-0 translate-middle-y btn-next" id="btn-next">❯</button>
@@ -155,11 +164,11 @@
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
               <div class="texto-video">
                 <p>SIMULADORES</p>
-                <h2><strong>Uma Academia para voçe</strong></h2>
-                <p>Prepare-se para uma jornada educativa e interativa que transforma conceitos teóricos em prática!</p>
-                <p>Aprenda, teste e explore motores e geradores elétricos com nosso app de simulação avançada.</p>
-                <p>Ideal para estudantes, engenheiros e entusiastas da eletricidade.</p>
-                <button class="btn btn-secondary mx-auto">Saiba mais</button>
+                <h2><strong>Uma Academia para o Seu Desenvolvimento Profissional</strong></h2>
+                <p>Prepare-se para uma experiência de aprendizado inovadora, onde a teoria ganha vida na prática!</p>
+                <p>Com nosso avançado aplicativo de simulação, você pode explorar, testar e dominar o funcionamento de motores e geradores elétricos de forma interativa e dinâmica.</p>
+                <p>Ideal para estudantes, engenheiros e profissionais da área elétrica que buscam aprimorar seus conhecimentos e habilidades.</p>
+                <a href="servicos.html" class="btn btn-secondary mx-auto">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -174,7 +183,7 @@
       </div>
     </section>
 
-    <section class="parallax d-flex flex-column justify-content-center align-items-center" id="produtos">
+    <section class="parallax d-flex flex-column justify-content-md-center align-items-md-center" id="produtos">
       <div class="sessao-destaque container-fluid py-3">
         <div class="d-flex justify-content-between align-items-center flex-wrap meus-prodtext">
           <div>
@@ -182,7 +191,7 @@
             <h2>Tudo o que procuras</h2>
           </div>
           <div>
-            <button class="btn btn-secondary mx-auto">Saiba mais </button>
+            <a href="servicos.html" class="btn btn-secondary mx-auto">Saiba mais </a>
           </div>
         </div>
         <div class="carousel-container">
@@ -190,14 +199,14 @@
             <button class="carousel-btn prev">&#10094;</button>
             <button class="carousel-btn next">&#10095;</button>
           </div>
-       
+
           <article class="my-4 d-flex flex-nowrap overflow-x-auto destaquescrol" id="carousel">
             <div class="d-flex flex-column justify-content-center align-items-center shadow meu-card mx-3 p-3">
               <img src="assets/images/carousel/img22.jpeg" class="" alt="" />
               <div class="d-flex flex-column align-items-start w-100 py-2 text-start">
                 <small>Simule motores elétricos com precisão</small>
                 <small class="">10/10/2025</small>
-                <a href="#" class="px-0">Cadastra-se</a>
+                <a href="detalhes._curso.html" class="px-0">Cadastra-se</a>
               </div>
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center shadow meu-card mx-3 p-3">
@@ -205,7 +214,7 @@
               <div class="d-flex flex-column align-items-start w-100 py-2 text-start">
                 <small>Simule e Programe PLC com precisão</small>
                 <small class="">10/10/2025</small>
-                <a href="#" class="px-0">Cadastra-se</a>
+                <a href="detalhes._curso.html" class="px-0">Cadastra-se</a>
               </div>
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center shadow meu-card mx-3 p-3">
@@ -213,7 +222,7 @@
               <div class="d-flex flex-column align-items-start w-100 py-2 text-start">
                 <small>Curso de automação e refrigeração</small>
                 <small class="">10/10/2025</small>
-                <a href="#" class="px-0">Cadastra-se</a>
+                <a href="detalhes._curso.html" class="px-0">Cadastra-se</a>
               </div>
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center shadow meu-card mx-3 p-3">
@@ -221,7 +230,7 @@
               <div class="d-flex flex-column align-items-start w-100 py-2 text-start">
                 <small>Progamação de Jogos Android, Nivel basico, a avançado</small>
                 <small class="">10/10/2025</small>
-                <a href="#" class="px-0">Cadastra-se</a>
+                <a href="detalhes._curso.html" class="px-0">Cadastra-se</a>
               </div>
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center shadow meu-card mx-3 p-3">
@@ -229,7 +238,7 @@
               <div class="d-flex flex-column align-items-start w-100 py-2 text-start">
                 <small>Formação de mecanica de vapor</small>
                 <small class="">10/10/2025</small>
-                <a href="#" class="px-0">Cadastra-se</a>
+                <a href="detalhes._curso.html" class="px-0">Cadastra-se</a>
               </div>
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center shadow meu-card mx-3 p-3">
@@ -237,11 +246,11 @@
               <div class="d-flex flex-column align-items-start w-100 py-2 text-start">
                 <small>Formação de Reparação de chiller</small>
                 <small class="">10/10/2025</small>
-                <a href="#" class="px-0">Cadastra-se</a>
+                <a href="detalhes._curso.html" class="px-0">Cadastra-se</a>
               </div>
             </div>
           </article>
-         
+
         </div>
 
       </div>
@@ -256,7 +265,7 @@
               <span>
                 Existencia
               </span>
-              <strong>11 anos</strong>
+              <strong>22 anos</strong>
             </div>
           </div>
           <div class="d-flex align-items-center">
@@ -267,7 +276,7 @@
               <span>
                 Experiencia
               </span>
-              <strong>11 anos</strong>
+              <strong>43 anos</strong>
             </div>
           </div>
           <div class="d-flex align-items-center">
@@ -278,7 +287,7 @@
               <span>
                 Formação
               </span>
-              <strong>11 anos</strong>
+              <strong>110 Formções</strong>
             </div>
           </div>
           <div class="d-flex align-items-center">
@@ -290,7 +299,7 @@
                 Formandos
               </span>
               <span>
-                <b>11 anos</b>
+                <b>2200 Formandos</b>
               </span>
 
             </div>
@@ -306,10 +315,10 @@
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
               <div class="texto-video">
                 <p>Outros</p>
-                <h2><strong>Uma Academia para voçe</strong></h2>
-                <p>Prepare-se para uma jornada educativa e interativa que transforma conceitos teóricos em prática!</p>
-                <p>Aprenda, teste e explore motores e geradores elétricos com nosso app de simulação avançada.</p>
-                <p>Ideal para estudantes, engenheiros e entusiastas da eletricidade.</p>
+                <h2><strong>Uma Academia para o Seu Desenvolvimento Profissional</strong></h2>
+                <p>Prepare-se para uma experiência de aprendizado inovadora, onde a teoria ganha vida na prática!</p>
+                <p>Com nosso avançado aplicativo de simulação, você pode explorar, testar e dominar o funcionamento de motores e geradores elétricos de forma interativa e dinâmica.</p>
+                <p>Ideal para estudantes, engenheiros e profissionais da área elétrica que buscam aprimorar seus conhecimentos e habilidades.</p>
                 <div class="" style="">
                   <button class="btn btn-secondary mx-auto">Saiba mais</button>
                   <button class="btn btn-secondary mx-auto">Ver mais</button>
@@ -355,8 +364,8 @@
     <section id="contact" class="contact section parallax d-flex flex-column justify-content-center align-items-center">
 
       <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-        <h2>Contactos</h2>
-        <p>Se precisar de mais informações ou desejar nossos serviços, entre em contato conosco:</p>
+        <h2 class="text-dark">Contactos</h2>
+        <p>Se precisar de mais informações ou desejar nossos serviços, contacta-nos:</p>
       </div>
       <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
 
@@ -367,15 +376,15 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Endereço</h3>
-                <p>Angola, Luanda, Maculusso</p>
+                <p>Rua dos CTT CINFOTEC RANGEL S/nº, Luanda-Angola</p>
               </div>
             </div>
 
             <div class="info-item d-flex aos-init aos-animate" data-aos="" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Liga para Nós</h3>
-                <p>921 697 567 / 941 941 465</p>
+                <h3>Contacta-nos</h3>
+                <p>+244 2921 697 567 /+244 944 18 24 18</p>
               </div>
             </div>
 
@@ -383,7 +392,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Nosso Email</h3>
-                <p>monteiromonteiro@gmail.com</p>
+                <p>poloinovacaolab4d@gmail.com</p>
               </div>
             </div>
 
@@ -426,7 +435,9 @@
 
       </div>
     </section>
+    <br>
   </main>
+  <br>
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
@@ -435,10 +446,10 @@
             <span class="sitename">Simulador</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Angola, Luanda, Maculusso</p>
-            <p>Angola, Luanda, Maculusso</p>
-            <p class="mt-3"><strong>Telefone:</strong> <span>+244 921 697 567</span></p>
-            <p><strong>Email:</strong> <span>monteiromonteiro@gmail.com</span></p>
+            <p>Rua dos CTT CINFOTEC RANGEL S/nº, Luanda-Angola</p>
+           
+            <p class="mt-3"><strong>Telefone:</strong> <span>+244 921 697 567 / +244 944 18 24 18</span></p>
+            <p><strong>Email:</strong> <span>poloinovacaolab4d@gmail.com</span></p>
           </div>
         </div>
 
@@ -485,6 +496,42 @@
     </div>
   </footer>
 </body>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasMenuLabel">
+
+      <img src="assets/images/logo-mini.svg" class="img-fluid piclogo" style="max-width: 40px;" title="logo" />
+
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <nav class="nav d-flex flex-column justify-content-between align-items-start">
+      <div class="input-group">
+        <input type="search" placeholder="Pesquisar" class="form-control" />
+        <button><i class="bi bi-search"></i></button>
+      </div>
+      <ul class="link-liste d-flex flex-column py-1 px-0 mx-0">
+        <li class="lista-item">
+          <a href="#" class="nav-link link-ativado" style="">Inicio</a>
+        </li>
+        <li class="lista-item">
+          <a href="/simulador" class="nav-link">Simuladores</a>
+        </li>
+        <li class="lista-item">
+          <a href="/servicos" class="nav-link">Serviços</a>
+        </li>
+        <li class="lista-item">
+          <a href="/cursos" class="nav-link">Cursos</a>
+        </li>
+        <li class="lista-item">
+          <a href="/contacto" class="nav-link">Contactos</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
 <script src="assets/vendor/jquery-7.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

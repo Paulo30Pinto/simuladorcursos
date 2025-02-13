@@ -8,45 +8,61 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #07467c; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0880e8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #ca6702; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #ca6702; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #fafafa; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #f2f2f2; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --rgbacolor1: #fafafae6;
+    --opacity-color: #ca66025b;
+    --background-color: #ca6702;
+    --default-color: #fafafa;
+    --heading-color: #ffffff;
+    --surface-color: 023e8a;
+    --contrast-color: #f2f2f2;
+    --repaocidade2: #ca6702;
+  }
+  
+  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+  :root {
+    --nav-color: #ffffffc7;  /* The default color of the main navmenu links */
+    --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #fafafa; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #f2f2f2; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #ca6702; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+    --rgbacor2cinza: #9e9e9e;
+    --repaocidade: #ca660265;
+    --repaocidade1: #ca66026c;
+    --background-color: #f0f8ff;
+    --surface-color: #ffffff;
+    --repaocidade1: #ca6702;
+    --black-opacity: #00000080;
+  }
+  
+  /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+  .light-background {
+    --background-color: #f0f8ff;
+    --surface-color: #ffffff;
+  }
+  
+  .dark-background {
+    --background-color: #ca6702;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #ca6702;
+    --contrast-color: #ffffff;
+  }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: rgba(255, 255, 255, 0.78);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #115379; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
-.light-background {
-  --background-color: #f0f8ff;
-  --surface-color: #ffffff;
-}
-
-.dark-background {
-  --background-color: #115379;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: aqua;
-  --contrast-color: #ffffff;
-}
 
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
 }
 .link-ativado{
-  color: var(--heading-color) !important;
+  color: var(--nav-dropdown-hover-color) !important;
   text-decoration: underline;
 }
 
@@ -55,7 +71,7 @@
     border: none !important;
   }
   header input::placeholder{
-    color: #e7e7e7 !important;
+    color: #fefefe !important;
   }
   
   body {
@@ -68,15 +84,14 @@
   }
     /**HEADER**/
     .header {
-      background-color: rgba(250, 250, 250, .9);
-    
+      background-color: var(--rgbacolor1);
     }
     
     .header a {
-      color: #115379;
+      color: var(--nav-dropdown-hover-color);
     }
     .header a:hover {
-      color: var(--heading-color) !important;
+      color: var(--nav-dropdown-hover-color) !important;
       text-decoration: underline;
     }
     
@@ -88,15 +103,15 @@
       width: 35px;
       height: 35px;
       border-radius: 100%;
-      background-color: #115379;
-      border: solid 1px #115379;
-      color: #fff;
+      background-color: var(--nav-dropdown-hover-color);
+      border: solid 1px var(--nav-dropdown-hover-color);
+      color: var(--background-color);
     }
 
     /**BANNER**/
   .banner {
-    background: url("../images/dashboard/people.png");
-  /*  background: url("../images/carousel/img8.jpg");*/
+    background: url("../images/dashboard/k.jpg");
+   /* background: url("../video/fundo.mp4");*/
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -110,8 +125,8 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(17, 83, 121, .4);
-    background: linear-gradient(to right, rgba(15, 32, 75, .6) 0%, rgba(0, 102, 161, .6) 80%, rgba(83, 167, 217, .6) 100%);
+    background: var(--repaocidade1);
+    background: linear-gradient(to right, var(--repaocidade1) 0%, var(--opacity-color) 80%, var(--repaocidade) 100%);
     inset: 0;
     z-index: -1;
   }
@@ -122,7 +137,7 @@
 
   .cont-div-banner .ladoesquerde article {
     background: rgba(231, 231, 231, .8);
-    color: #115379;
+    color: var(--nav-dropdown-hover-color);
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -130,14 +145,14 @@
   .linha-contexto article {
     width: 80%;
     height: 50px;
-    background-color: #115379;
+    background-color: var(--nav-dropdown-hover-color);
     margin-left: 20%;
-    color: #fafafa;
+    color: var(--contrast-color);
   }
 
   .linha-contexto article::before {
     content: "";
-    background-color: aqua;
+    background-color: var(--accent-color);
     width: 30px;
     height: 50px;
     position: absolute;
@@ -153,13 +168,13 @@
      #sessao-destaque .meu-card {
       width: 300px;
       height: 100px;
-      background-color: #f7f7f7;
+      background-color: var(--contrast-color);
       border-radius: 10px;
       padding: 20px;
     }
     #sessao-destaque .meu-card small,
   #sessao-destaque .meu-card strong {
-   color: #115379;
+   color: var(--nav-dropdown-hover-color);
   }
    
   #sessao-destaque .meu-card img {
@@ -178,7 +193,7 @@
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
-    /* Internet Explorer e Edge */
+    /* Internet Explorer e Edge */ 
   }
   
   .destaquescrol::-moz-scrollbar {
@@ -190,9 +205,9 @@
     z-index: 10;
     opacity: 0.7;
     top: 10%;
-    background: rgba(33, 37, 41, .9) !important;
+    background: var(--black-opacity) !important;
     border: none;
-    color: #115379;
+    color: var(--nav-dropdown-hover-color);
   }
   
   @-moz-document url-prefix() {
@@ -210,7 +225,7 @@
   }
   
   .texto-video {
-    color: #115379;
+    color: var(--nav-dropdown-hover-color);
   }
   #produtos .destaquescrol .meu-card{
     width: 230px;
@@ -222,15 +237,15 @@
     border-radius: 12px;
   }
   #produtos .destaquescrol .meu-card small:nth-child(2){
-    color: #115379;
+    color: var(--nav-dropdown-hover-color);
    }
    #produtos .meus-prodtext{
-     color: #115379;
+     color: var(--nav-dropdown-hover-color);
     }
     #produtos .meus-prodtext button{
-     background-color: #115379;
-     border-color: #115379;
-     color: #f2f2f2;
+     background-color: var(--nav-dropdown-hover-color);
+     border-color: var(--nav-dropdown-hover-color);
+     color: var(--contrast-color);
     }
     #produtos .linha-contexto{
       height: 150px;
@@ -246,7 +261,9 @@
   background-repeat: no-repeat;
   position: relative;
 }
-
+main{
+  overflow-x: hidden !important;
+}
 .contact:before {
   content: "";
  /* background: color-mix(in srgb, var(--background-color), transparent 30%); */
@@ -303,7 +320,7 @@
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
+  color: #111;
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
@@ -317,7 +334,7 @@
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, #1111, transparent 70%);
 }
 
 .contact .php-email-form button[type=submit] {
@@ -356,8 +373,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: var(--black-opacity);
+    color: var(--background-color);
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -407,8 +424,8 @@
   border: 0;
   padding: 4px;
   width: 100%;
-  background-color: var(--surface-color);
-  color: var(--default-color);
+  background-color: #111;
+  color: #111;
 }
 
 .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
@@ -420,14 +437,14 @@
   font-size: 16px;
   padding: 0 20px;
   margin: -7px -8px -7px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #111;
+  color: #111;
   transition: 0.3s;
   border-radius: 50px;
 }
 
 .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, #1111, transparent 20%);
 }
 
 .footer .footer-top {
@@ -525,6 +542,35 @@
   top: 70px !important;
 }
 
+/**MENU**/
+.offcanvas .list-group-item {
+  background: none;
+  border: none;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.offcanvas .list-group-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+}
+
+.offcanvas .list-group-item a:hover {
+  color: gray;
+}
+
+.offcanvas .social-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+.offcanvas .social-links a:hover {
+  text-decoration: underline;
+}
+
 
 /**TELA CELULAR**/ 
 @media (max-width: 999px){
@@ -534,28 +580,31 @@
     width: 100%;
   }
 
-
+  .footer a{
+    color: var(--contrast-color);
+  }
+  
   .parallax {
     min-height: 100vh !important;
     position: relative;
   }
     /**BANNER**/
   .conteudo-pic {
-    background: url("../images/Moça.png");
-    background-size: 100vw 100%;
+    background: url("../images/banner.png");
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100vw;
     height: 40vh;
    
   }
   .conteudo-pic span, .conteudo-pic small, .conteudo-pic strong {
-    color: #9e9e9e !important; 
+    color: var(--rgbacor2cinza) !important; 
   }
   .cont-div-banner .ladoesquerde article button {
     max-width: 150px;
-    background-color: #2c93cf;
-    border-color: #2c93cf;
-    color: #fafafa;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--nav-mobile-background-color);
   }
   .texto-estilo {
     font-size: 30px;
@@ -563,7 +612,7 @@
     right: -15vw;
     top: 5vh;
     z-index: 1;
-    color: #2c93cf;
+    color: var(--accent-color);
   }
   .texto-estilo .rodarTexto {
     transform: rotate(90deg);
@@ -572,16 +621,16 @@
   }
   .texto-video button {
     max-width: 150px;
-    background-color: #2c93cf !important;
-    border-color: #2c93cf;
-    color: #fafafa;
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color);
+    color: var(--nav-mobile-background-color);
   }
 
   .linha-contexto p{
     font-size: 9px;
   }
   #sessao-destaque .linha-contexto{
-    height: 100px;
+    height: 50px;
     width: 100%;
   }
   #sessao-destaque .linha-contexto .linha-contexto-fotter{
@@ -597,11 +646,11 @@
    #produtos .linha-contexto .linha-produto{
     width: 100%;
     height: 100%;
-    background-color: #115379;
+    background-color: var(--nav-dropdown-hover-color);
   }
   #produtos .linha-contexto .linha-produto::after{
     content: "";
-    background-color: aqua;
+    background-color: var(--accent-color);
     width: 40px;
     height: 100%;
     position: absolute;
@@ -614,7 +663,7 @@
     border-radius: 100%;
   }
   #portifolio .linha-contexto{
-    height: 100px;
+    height: 50px;
     width: 100%;
   }
   #portifolio .linha-contexto .linha-contexto-fotter{
@@ -642,13 +691,13 @@
   
   /**HEADER**/
   header nav {
-    border: solid 1px #e7e7e7;
-    background: #e7e7e7;
+    border: solid 1px var(--contrast-color);
+    background: var(--contrast-color);
     border-radius: 15px;
   }
   header nav .input-group {
-    border: solid 1px #115379;
-    background: #115379;
+    border: solid 1px var(--nav-dropdown-hover-color);
+    background: var(--nav-dropdown-hover-color);
     border-radius: 15px;
     width: 150px;
     height: 35px;
@@ -663,7 +712,7 @@
     border: none;
     border-color: transparent !important;
     max-height: 100%;
-    color: #fafafa !important;
+    color: var(--surface-color) !important;
   }
   
   header nav button {
@@ -671,15 +720,18 @@
     border: none;
     border-color: transparent !important;
     max-height: 100%;
-    color: #fff;
+    color: var(--background-color);
   }
   
   /**BANNER**/
   .conteudo-pic {
-    background: url("../images/Moça.png");
-    background-size: cover;
+    background: url("../images/banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     width: 100%;
     height: 100%;
+    
   }
     .ladoesquerde{
       height: 100%;
@@ -699,16 +751,16 @@
   
   .cont-div-banner .ladoesquerde article button {
     width: 150px;
-    background-color: #2c93cf;
-    border-color: #2c93cf;
-    color: #fafafa;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--surface-color);
   }
   
   
   .conteudo-pic::after {
     content: "";
-    background: rgba(17, 53, 121, .8);
-    background: linear-gradient(top, rgb(55, 117, 179, .8), rgba(40, 85, 130, .8));
+    background: var(--repaocidade1);
+
     width: 80%;
     height: 90px;
     position: absolute;
@@ -723,7 +775,7 @@
     right: 5vw;
     top: 20vh;
     z-index: 1;
-    color: #dadada;
+    color: var(--rgbacor2cinza);
   }
   
   .texto-estilo .rodarTexto {
@@ -735,7 +787,7 @@
   .texto-estilo .rodarTexto strong {
     position: absolute;
     top: -6vw;
-    text-shadow: -1px -1px 0 rgba(26, 99, 167, 0.6);
+    text-shadow: -1px -1px 0 var(--repaocidade1);
   }
   
   .linha-contexto {
@@ -758,14 +810,14 @@
   .texto-video p:first-of-type {
     font-size: 20px;
     font-weight: 600;
-    color: #1271a8;
+    color: var(--nav-dropdown-hover-color);
   }
   
   .texto-video button {
     width: 150px;
-    background-color: #2c93cf !important;
-    border-color: #2c93cf;
-    color: #fafafa;
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color);
+    color: var(--surface-color);
   }
   #sessao-destaque .linha-contexto{
     height: 100px;
@@ -783,11 +835,11 @@
    #produtos .linha-contexto .linha-produto{
     width: 90%;
     height: 100%;
-    background-color: #115379;
+    background-color: var(--nav-dropdown-hover-color);
   }
   #produtos .linha-contexto .linha-produto::after{
     content: "";
-    background-color: aqua;
+    background-color: var(--accent-color);
     width: 40px;
     height: 100%;
     position: absolute;
@@ -817,4 +869,9 @@
    background-attachment: fixed;
   }
  
+}
+
+form input, form textarea{
+  border: solid 1px #5e0202 !important;
+
 }
